@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+      <link rel="stylesheet" href="style.css">
+      <title>THE TREASURE HUNT</title>
+</head>
+<body> 
+<div class="bg">
+<header id="nav" onpointerenter="navdrop()" onpointerleave="navlift()">
+      <nav class="nav">
+            <label type="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="THE TREASURE HUNT"></a>
+            </label>
+            <ul>
+                  <li><button><a href="index.html">RESTART</a></button></li>
+                  <li><button><a href="index.html">END GAME</a></button></li>
+            </ul>
+      </nav>
+</header>
+<div class="stage1">
+<div class="wanted" onclick="togglepopup()">
+      <img src="images/RAJVEER wanted.png" alt="wanted-img">
+</div>
+<div class="enter">
+      <button id="enter" onclick="bgchange()"><a href="#">Enter</a></button>
+</div>
+
+<footer id="foot">
+      <div class="foot" onpointerenter="footdrop()"  onpointerleave="footlift()">
+            <label class="ra" onclick="next()" ><img src="images/right-arrow.png" alt=""></label>
+            <label class="la" onclick="prev()"><img src="images/left-arrow.png" alt=""></label>
+            <img class="slider-img" src="images/desp-1.png" alt="description">
+            <!--<button><a href="www.google.com">adsfg</a></button>-->
+      </div>
+</footer>
+</div>
+<div class="info" id="info1" >
+      <div class="overlay">
+            <div class="img">
+                        <div class="close-btn" onclick="togglepopup()">&times;</div>
+            <img id="tog" src="images/RAJVEER wanted.png">
+            </div>
+      </div>
+</div>
+<div class="deadend">
+      <div class="imgcon">
+      <img src="images/deadend.png" alt="deadend">
+      <span id="txt">These are goods compartments of train you cannot go back</span>
+      </div>
+</div>
+<div class="stage2-enter">
+      <!--stage2-enter-->
+      <ul>
+            <li onclick="move17()"><img src="images/17 com.png" alt="17"></li>
+            <li onclick="move19()"><img src="images/19 com.png" alt="19"></li>
+      </ul>
+</div>
+<div class="stage2" onclick="bgchange()">
+      <button>GO FORWARD</button>
+</div>
+<div class="stage3">
+      <ul>
+            <li onclick="peek1()"><img src="images/vip11.png" alt="vip1"></li>
+            <li onclick="peek2()"><img src="images/vip12.png" alt="vip2"></li>
+            <li onclick="peek3()"><img src="images/vip13.png" alt="vip3"></li>
+      </ul>
+</div>
+<div class="vip">
+      <div class="vip1">
+           <span class="p1" onclick="p1()"> <img src="images/p1.jpg" alt="p1"></span>
+           <span class="p4" onclick="p4()"><img src="images/p4.jpg" alt="p4"></span>
+           <span class="c1" onclick="c1()"><img src="images/c1.png" alt="c1"></span> 
+      </div>
+      <div class="vip2">
+           <span class="p2" onclick="p2()"> <img src="images/p2.jpg" alt="p2"></span>
+           <span class="p3" onclick="p3()"><img src="images/p3.jpg" alt="p3"></span>
+           <span class="c3" onclick="c3()"><img src="images/c3.png" alt="c3"></span> 
+      </div>
+      <div class="vip3">
+            <span class="c2" onclick="c2()"> <img src="images/c2.png" alt="c2"></span>
+      </div>
+</div>
+
+<div class="stage5">
+      <ul>
+            <li onclick="op1()"><img src="images/op1.png" alt="op1"></li>
+            <li onclick="op2()"><img src="images/op2.png" alt="op2"></li>
+            <li onclick="op3()" ><img src="images/op3.png" alt="op3"></li>
+      </ul>
+</div>
+<div class="stage6">
+      <ul>
+            <li onclick="op11()"><img src="images/op11.png" alt="op11"></li>
+            <li onclick="op12()"><img src="images/op12.png" alt="op12"></li>
+      </ul>
+</div>
+<div class="stage7">
+      <ul>
+            <li onclick="op21()"><img src="images/op21.png" alt="op21"></li>
+            <li onclick="op21()"><img src="images/op22.png" alt="op22"></li>
+            <li onclick="bgchange()"><img src="images/op23.png" alt="op23"></li>
+      </ul>
+</div>
+<div class="win">
+      <div class="img"><img src="images/win.png" alt="congo"></div>
+      <div class="softskills">
+            <label>SOFT SKILLS:</label>
+            <ul>
+                  <li>Curiosity : <span class="c">NA</span></li>
+                  <li>Prioritization : <span class="p">NA</span></li>
+                  <li>Detail oriented : <span class="d">NA</span></li>
+                  <li>Critical thinking : <span class="ct">NA</span></li>
+                  <li>Observation : <span class="ob">NA</span></li>
+                  <li>Analysis : <span class="a">NA</span></li>
+            </ul>
+      </div>
+</div>
+<footer id="foot1">
+      <div class="foot1" onpointerenter="footdrop()"  onpointerleave="footlift()">
+            <img id="desp" src="images/empty des template.png" alt="description">
+            <!--<button><a href="www.google.com">adsfg</a></button>-->
+      </div>
+</footer>
+</div>    
+<script src="console.js"></script>
+</body>
+</html>

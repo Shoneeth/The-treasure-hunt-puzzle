@@ -1,0 +1,521 @@
+*{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+}
+/*---------------------nav bar-------------------*/
+.nav{
+     padding: 10px;
+     background-color: rgba(165, 134, 42, 0.829);
+     transition: all 0.5s ease-in-out;
+     position: relative;
+     top: -10vh;
+}
+#nav.act .nav{
+   top: 0px;
+}
+#nav.act1 .nav{
+      top:-10vh;
+}
+label img{
+      padding: 0px;
+      margin: 0px;
+      width: 200px;
+}
+.nav ul{
+      float: right;
+      margin-right:30px ;
+}
+
+.nav ul li{
+      display: inline-block;
+      margin: 5px;
+}
+.nav ul li a{
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(238, 234, 234);
+    padding: 10px,10px;
+    margin:5px;
+}
+.nav ul li button{
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgb(176, 21, 21);
+      border: 0px;
+}
+/*-------body-----------*/
+.bg{
+     background: url(images/stage\ 1\ bg.png);
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+}
+.stage1{
+      display: block;
+}
+.foot{
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      right: -97vw;
+      bottom: -72vh;  
+}
+.foot1{
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      right: -97vw;
+      bottom: -72vh;  
+      display: none;
+}
+#foot.act2 .foot{
+      right:0;
+}
+#foot.act3 .foot{
+      right:-97vw;
+}
+.bg .foot .la img{
+      position: absolute;
+      width: 64px;
+      margin-top: 45px;
+}
+.bg .foot .ra img{
+      position:absolute;
+      width: 64px;
+      right: 1%;
+      top: 40%;
+}
+.bg .foot img {
+      width: 100vw;
+}
+#foot1.act2 .foot1{
+      right:0;
+}
+#foot1.act3 .foot1{
+      right:-97vw;
+}
+.bg .foot1 img {
+      width: 100vw;
+}
+/*-----------------------------------------------*/
+.wanted {
+      padding: 10px;
+      margin: 10px;
+      position: absolute;
+      left: 65.5%;
+      top:68%;
+}
+.wanted img{
+   width:80px;
+}
+.enter{
+      padding: 10px;
+      margin: 10px;
+      position: absolute;
+      left: 30%;
+      top:69%;
+}
+.enter button a{
+      color: aliceblue;
+}
+.enter button{
+      width: 150px;
+      height: 50px;
+      background-color: green;
+      border-radius: 15px;
+      border-width: 0;
+      font-size: 25px;
+      font-weight: 600;
+}
+.enter button:hover{
+      background-color:aquamarine;
+}
+
+
+/*-----------------------*/
+.info .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+}
+.info .img{
+      position: inherit;
+      top:30%;
+      left: 50%;
+      transform: translate(-50%,-50%)scale(0);
+      width: 550px;
+      height: 220px;
+      z-index: 2;
+      padding: 40px;
+      box-sizing: border-box;
+}
+#tog{
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            width: 80%;
+}
+.info .close-btn{
+            cursor: pointer;
+            position: absolute;
+            padding: 0;
+            top:10px;
+            right:90px;
+            width:20px;
+            height:20px;
+            background: #222;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 17px;
+            text-align: center;
+            border-radius: 50%;
+}
+.info.act12 .overlay{
+            display: block;
+}
+      
+.info.act12 .img{
+      transition: all 800ms ease-in-out;
+      transform: translate(-50%,-50%) scale(1);
+ }
+ 
+ /*-------------------stage2 enter----------------------*/
+ .stage2-enter{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .stage2-enter ul li img{
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .stage2-enter ul li img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .stage2-enter ul li{
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .stage2-enter ul {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      gap: 50px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
+ 
+ /*------------------------deadend--------------------------*/
+
+ .deadend{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transition: all 800ms ease-in-out;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .deadend .imgcon{
+      display:grid;
+      grid-template-rows: repeat(2);
+      gap:30px;
+      align-items: center;
+ }
+ .deadend img{
+      margin-top: 3%;
+      margin-left: 30%;
+      width: 450px;
+      align-items: center;
+ }
+ .deadend #txt{
+      color:#fff;
+      font-size: 25px;
+      font-weight: 800;
+      text-align: center;
+ }
+
+ /*-----------------------stage 2----------------*/
+ .stage2 {
+      position: relative;
+      top :60%;
+      float: right;
+      right: 15%;
+      display: none;
+ }
+ .stage2 button{
+      width: 150px;
+      height: 75px;
+      color: aliceblue;
+      background: #20bd35;
+      font-size: 15px;
+      font-weight: 800;
+      border-radius: 15px;
+      border: 0px;
+ }
+ .stage2 button:hover{
+      background-color: chartreuse;
+ }
+ /*------------------stage3-----------------------*/
+ .stage3{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .stage3 ul li img{
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .stage3 ul li img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .stage3 ul li{
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .stage3 ul {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 40px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
+ /*------------------------stage 4-------------------------*/
+ /*----------------vip1--------------------------*/
+ .vip1{
+      display: none;
+ }
+ .vip .vip1 .p1 img{
+      position: relative;
+      top:3%;
+      left:15%;
+      width:130px;
+ }
+ .vip .vip1 .p4 img{
+      position: relative;
+      top: 31vh;
+      left:41%;
+      width:90px;
+ }
+ .vip .vip1 .c1 img{
+      position: relative;
+      top: 10vh;
+      left:54%;
+      width:160px;
+ }
+ /*------------------------------------------*/
+ /*----------------vip2--------------------------*/
+ .vip2{
+      display: none;
+ }
+ .vip .vip2 .p2 img{
+      position: relative;
+      top:3%;
+      left:33%;
+      width:100px;
+ }
+ .vip .vip2 .p3 img{
+      position: relative;
+      top: 3%;
+      left:46%;
+      width:100px;
+ }
+ .vip .vip2 .c3 img{
+      position: relative;
+      top: 24vh;
+      left:57%;
+      width:50px;
+ }
+ /*------------------------------------------*/
+ /*----------------vip3--------------------------*/
+ .vip3{
+      display: none;
+ }
+ .vip .vip3 .c2 img{
+      position: relative;
+      left:50%;
+      transform: translate(-50%,0%);
+      width:25%;
+ }
+ /*------------------------------------------*/
+ /*---------------------stage5------------------*/
+ .stage5{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .stage5 ul li img{
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .stage5 ul li img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .stage5 ul li{
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .stage5 ul {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 40px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
+ /*---------------------------------*/
+ /*-------------------stage6------------*/
+ .stage6{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .stage6 ul li img{
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .stage6 ul li img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .stage6 ul li{
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .stage6 ul {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      gap: 50px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
+ /*-------------------------stage7------------*/
+ .stage7{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display: none;
+ }
+ .stage7 ul li img{
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .stage7 ul li img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .stage7 ul li{
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .stage7 ul {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 40px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
+/*-------------------------win----------------------------*/
+.win{
+      position: relative;
+      top:40%;
+      left: 50%;
+      width: 70vw;
+      height: 70vh;
+      transform: translate(-50%,-50%)scale(1);
+      background: rgba(0,0,0,0.7);
+      z-index: 1;
+      display:none;
+ }
+ .win img{
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
+      margin: 25px;
+      width: 250px; 
+ }
+ .win img:hover{
+      transition: all 800ms ease-in-out;
+      transform: scale(1.1);
+ }
+ .win label{
+      margin-left:50px ;
+      color: #fff;
+      font-size: 20px;
+ }
+ .win ul li{
+      color: aliceblue;
+     margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .win ul {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 40px;
+      margin:auto;
+      padding: 0px 0px 50px 0px;
+ }
