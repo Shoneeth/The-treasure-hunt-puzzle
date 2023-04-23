@@ -1,1 +1,1 @@
-# the-treasure-hunt.github.io
+# the-treasure-hunt
