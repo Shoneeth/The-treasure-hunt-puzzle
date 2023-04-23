@@ -1,4 +1,4 @@
-# the-treasure-hunt
+# The-treasure-hunt-puzzel
 THE TREASURE HUNT PUZZLE.
 
 The project the treasure hunt is an interactive puzzle with a unique storyline.
