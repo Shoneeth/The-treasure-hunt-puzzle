@@ -1,4 +1,4 @@
-# The-treasure-hunt-puzzel
+# The-treasure-hunt-puzzel (https://shoneeth.github.io/The-treasure-hunt-puzzle/)
 THE TREASURE HUNT PUZZLE.
 
 The project the treasure hunt is an interactive puzzle with a unique storyline.
